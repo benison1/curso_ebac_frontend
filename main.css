@@ -1,0 +1,132 @@
+
+/*SERVE PARA DIZER QUE A PAGINA DEVE OBEDECER AS SUAS CORDENADAS DE TAMANHO  */
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* SERVE PARA ESTILIZAR O CABEÇALHO DA PAGINA, body > header quer dizer que deve pegar somente o primeiro header */
+body > header{
+    background-color: rgba(17, 6, 6, 0.911);
+    padding: 16px;
+    color: white;
+} 
+
+
+/*SERVE PARA DEIXAR OS TEXTOS UM DO LADO DE OUTRO E   justify-content: space-between;  quer dizer que deve dar um espaço do primeiro texto para a segunda */
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* SERVE PARA PARA FAZER OS LI FIQUEM EM LINHA E NÃO EM BLOCOS */
+header li{
+    display: inline;
+    
+
+}
+header li a {
+    color:white;
+    padding: 13px;
+    text-decoration: none;
+    
+
+}
+/*SERVE PARA DIZER QUE O TAMANHO DEVE SER DE TAL TAL PX*/
+
+.container{
+        width: 1366px;
+        margin: 0 auto;
+}
+/* SERVE PARA DIZER QUE OS CONTEUDOS DENTRO DOS ARTICLES DEVEM SER ALINHADOS EM LINHA,flex-wrap: wrap; QUER DIZER QUE DEPOIS DE ATINGIR O TAMANHO DADO NA CONTAINER 1366PX , COMEÇAR UMA NOVA LINHA E NÃO CONTINUAR NA MESMA LINHA   */
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+/*  SERVE PARA DEFINIR O TAMANHO DA IMAGEM DO ARTICLE */
+.articles article img{
+
+    /*height: 108px;*/
+    width: 100%;
+
+}
+/*  AQUI DEFINIMOS QUANTOS PORCENTOS DA IMAGEM DESEJAMOS COLOCAR */
+.articles article{
+    width:30%;
+}
+section{
+    padding: 16px 0;
+}
+/* AQUI DEFINIMOS A MARGIM DO TITULO H2 
+*/
+section h2,
+.articles article{
+    margin-bottom: 16px;
+}
+/*SERVE PARA ESTILIZAR O TAG H3 NOS ARTICLES */
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+}
+
+/* SERVE PARA ESTILIZAR O LINK DO ARTICLES */
+.articles article a{
+    background-color:rgb(42, 145, 16);
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.articles article h3{
+    font-size: 23px;
+}
+section h2{
+    font-size: 23px;
+}
+/*SERVE PARA DEIXAR UMA COR NA SECTION*/
+#sports{
+    background-color: rgba(0, 128, 0,0.3);
+}
+/*SERVE PARA ESTILIZAR O LINK */
+#sports a{
+    background-color: rgb(165, 114, 95);
+}
+#economy{
+    background-color: rgb(236, 236, 132);
+}
+#economy a {
+    background-color: rgb(234, 234, 22);
+    color:darkmagenta;
+}
+#tecnologia{
+    background-color: rgba(196, 194, 194, 0.678);
+}
+#tecnologia a {
+    background-color: rgb(0, 195, 255);
+    color: rgb(81, 81, 35);
+    
+}
+
+#entreterimento{
+    background-color: rgba(154, 90, 90, 0.57);
+}
+
+#entreterimento a {
+    background-color: darkcyan;
+    color: coral;
+
+}
